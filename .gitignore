@@ -29,7 +29,7 @@ env/
 # PyTorch
 *.pth
 *.pt
-!models/.gitkeep
+
 
 # Jupyter
 .ipynb_checkpoints/
