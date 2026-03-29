@@ -26,9 +26,12 @@ ENV/
 env/
 .venv
 
-# PyTorch
+# PyTorch (except trained models)
 *.pth
 *.pt
+
+# Trained models - DO NOT IGNORE
+!models/*.pth
 
 
 # Jupyter
