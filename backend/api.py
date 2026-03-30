@@ -1,3 +1,4 @@
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import torch
@@ -6,6 +7,12 @@ from model import SmartStarTrackerDenoiser
 import os
 
 app = FastAPI(title="Star Tracker Sensor Error Correction API")
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
