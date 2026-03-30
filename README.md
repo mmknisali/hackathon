@@ -32,6 +32,7 @@ pip install torch numpy fastapi uvicorn pydantic python-multipart
 ```
 
 ### 2. Train the Model
+#### *only if you want to, there is a model there thats already trained*
 
 ```bash
 cd backend
